@@ -2,26 +2,26 @@ function calcArgument (parameter) {
     console.log(typeof parameter);
 };
 //number
-calcArgument(14);  
-calcArgument(NaN);  
-calcArgument(Infinity);
+calcArgument(14);  //number
+calcArgument(NaN);  //number
+calcArgument(Infinity); //number
 //string
-calcArgument('14');
-calcArgument('');
+calcArgument('14'); //string
+calcArgument(''); //string
 //undefined
-calcArgument(undefined);
+calcArgument(undefined); //undefined
 //boolean
-calcArgument(true);
-calcArgument(false);
+calcArgument(true); //boolean
+calcArgument(false); //boolean
 //object
-calcArgument(null);
-calcArgument([10,11,12,13,14]);
-calcArgument(new String('apple'));
+calcArgument(null); //object
+calcArgument([10,11,12,13,14]); //object
+calcArgument(new String('apple')); //object
 //symbol
-calcArgument(Symbol());
-calcArgument(Symbol('argument'));
+calcArgument(Symbol()); //symbol
+calcArgument(Symbol('argument')); //symbol
 //function
-calcArgument(function(calkMe){});
+calcArgument(function(calkMe){}); //function
 
 
 

@@ -3,4 +3,4 @@ function sum(pears, apples) {
     return pears+apples;
 }
 let result = sum(10, 15);
-console.log(result);
+console.log(result); //25

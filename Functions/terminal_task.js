@@ -1,5 +1,5 @@
 // 'payment terminal' practical task
-const prompt=require("prompt-sync")({sigint:true});
+const prompt=require("prompt-sync")({sigint:true});// to make possible to work with prompt
 
 function checkName (person) {
     if (person =='Yauheniya') {
@@ -11,4 +11,4 @@ function checkName (person) {
 
 let name = prompt ('Who are you? ');
     
-checkName(name);
+checkName(name); // we need to write an answer Name and the reaction will be according conditions
