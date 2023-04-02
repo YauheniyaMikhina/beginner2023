@@ -1,68 +1,45 @@
-function task1() {
-    console.log('Task 1. Addition');
-    let taskAddition = 'task' + 3;
-    console.log(taskAddition); //'task3'
+// Task 1: Perform addition of various types (string + boolean, string + number, number + boolean)
 
-    let taskAddition0 = '2' + 3;
-    console.log(taskAddition0);//'23'
-
-    let result = true;
-    console.log(2+result);//3
-
-    let may = "may";
-    console.log(may+=false);//"mayfalse"
+function additionTypes(arg1, arg2) {
+    console.log(arg1 + arg2);
 }
 
-function task2() {
-    console.log('Task 2. Multiplication');
-    let taskMultiplication = '3'*5;
-    console.log(taskMultiplication);//'15'
-    //but
-    let taskMultiplication1 = 'question'*5;
-    console.log(taskMultiplication1); //NaN
+additionTypes('task', 3) // 'task3'
+additionTypes('2', 3) //'23'
+additionTypes(2, true) // 3  
+additionTypes("may", false) // "mayfalse"
 
-    let taskMultStrBool = true;
-    console.log(taskMultStrBool*'answer');//NaN
+// Task 2: Perform multiplication of various types (string * boolean, string * number, number * boolean)
 
-    let taskMultStrBool0 = true;
-    console.log(taskMultStrBool0*'2');//'2'
-
-    let taskMultStrBool00 = false;
-    console.log(taskMultStrBool00*'2'); //'0'
-
-    let taskMultNumBool1 = false;
-    console.log(taskMultNumBool1*2);//0
-
-    let taskMultNumBool2 = true;
-    console.log(taskMultNumBool2*2);//2
+function multiplicationTypes(arg1, arg2) {
+    console.log(arg1 * arg2);
 }
 
-function task3() {
-    console.log('Task 3. Divide');
-    let taskDivision = '4'/2;
-    console.log(taskDivision);//'2'
+multiplicationTypes('3', 5) // '15'    
+multiplicationTypes('question', 5)  // NaN
+multiplicationTypes(true, 'answer') // NaN
+multiplicationTypes(true, '2') // '2'
+multiplicationTypes(false, '2') // '0'
+multiplicationTypes(false, 2) // 0
+multiplicationTypes(true, 2) // 2
 
-    let taskDivision0 = 'cake'/2;
-    console.log(taskDivision0); //NaN
+// Task 3: Divide different types (string / boolean, string / number, number / Boolean)
 
-    let taskMultStrBool3 = true;
-    console.log(taskMultStrBool3/'answer');//NaN
-
-    let taskMultStrBool33 = true;
-    console.log(taskMultStrBool33/'2');//0.5
-
-    let taskMultStrBool333 = false;
-    console.log(taskMultStrBool333/'2'); //0
-
-    let taskMultNumBool4 = false;
-    console.log(taskMultNumBool4/2);//0
-
-    let taskMultNumBool44 = true;
-    console.log(taskMultNumBool44/2);//0.5
+function divisionTypes(arg1, arg2) {
+    console.log(arg1 / arg2);
 }
 
-function task4() {
-    console.log('Task 4. Conversion');
+divisionTypes('4', 2) //'2'
+divisionTypes('cake', 2) //NaN
+divisionTypes(true, 'answer') //NaN
+divisionTypes(true, '2') //0.5
+divisionTypes(false, '2') //0
+divisionTypes(false, 2) //0
+divisionTypes(true, 2) //0.5
+
+// Task 4: Perform explicit conversion (number, string, boolean)
+function conversionTypes() {
+    console.log('Task 4: conversion');
     //boolean >> string
     let boy = true;
     console.log(typeof boy); //boolean
@@ -74,11 +51,11 @@ function task4() {
     console.log('10'/'2'); //5 - number
 
     //number/value >>string
-    let taskAddition1 = 'task' + 3;
-    console.log(taskAddition1); //'task3'
-
-    let taskAddition2 = '2' + 3;
-    console.log(taskAddition2);//'23'
+    function additionTypes(arg1, arg2) {
+        console.log(arg1 + arg2);
+    }
+    additionTypes('task', 3) // 'task3'
+    additionTypes('2', 3) //'23'
 
     //value/string/number >> boolean
     console.log(Boolean('Good_morning!')); // true
@@ -86,7 +63,5 @@ function task4() {
     console.log(Boolean());//false
 }
 
-task1();
-task2();
-task3();
-task4();
+conversionTypes();
+
