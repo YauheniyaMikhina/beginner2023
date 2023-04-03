@@ -1,20 +1,18 @@
 // Create 2 objects: animal and cat, add move property to animal object, cat object must inherit move property from object animal
-class Animal {
-    constructor (animal1) {
-        this.animal1 = animal1;
-    }
-    move() {
-        console.log(`${this.animal1} is moving`);
+
+const obj1 = {
+    name: 'animal',
+    eats() {
+        console.log(`${this.name} eats smth tasty`)
     }
 }
-const animal= new Animal(`Lucky`);
-console.log(animal);
-animal.move();
 
-class Cat extends Animal {}
-const cat = new Cat(`Alice`);
-cat.move();
+const obj2 = {
+    name: 'cat',
+}
 
-/*Animal { animal1: 'Lucky' }
-Lucky is moving
-Alice is moving*/
+Object.setPrototypeOf(obj2, obj1)
+
+obj2.eats()
+
+// cat eats smth tasty
